@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MS DataCenter</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<div id="sidebar">
+		<div id="logo_header">
+			<a href="#"> <img src="images/lock.png" width="130" id="logo_link"> </a>
+			<p id="name">Data Security Center</p> <span id="firm">Microsoft</span>
+		</div>
+
+
+		<div id="menu">
+			<ul>
+				<li> <a href="#main"> Главная </a></li>
+				<li><a href="#services"> Сервисы </a></li>
+				<li><a href="#vacancy"> Вакансии </a></li>
+				<li><a href="#download"> Наши продукты </a></li>
+				<li><a href="#contacts"> Контакты </a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<a href="#" id="menu_swap">
+		<div id="nav-icon1">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>
+	</a>
+
+	<div id="wraper">
+
+		<div class="text_block">
+			<h2 id="header">Добро пожаловать</h2>
+			
+		    <p id="intro">
+		    	<a href="http://microsoft.com" style="text-decoration: none; color: blue;" target="_blank">Microsoft</a> - одна из ведущих IT компаний в мире. 
+				Microsoft data security center - это новое software/hardware решение, предназначенное для обеспечения безопасности ваших данных на серверах.
+			</p>
+		</div>
+
+		<div id="content">
+
+			<img src="images/data_c_1.jpg" width="99%">
+
+			<p id="info_text">
+				Наши филиалы расположены по всему миру				
+			</p>
+
+
+		</div>
+
+	</div>
+
+
+
+<script type="text/javascript">
+	jQuery(function($) {
+	    $("#menu_swap").click(function(){
+	        $("#sidebar").toggle();
+	        $('#nav-icon1').toggleClass("open");
+	        return false;
+	    });
+	})
+</script>
+</body>
+</html>
